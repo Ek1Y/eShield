@@ -1,13 +1,13 @@
 Config = {}
 
 
-Config.UseItem = true
-Config.RemoveItem = true
+Config.UseItem = true -- Ukoliko zelis da ti treba item da bi iskoristio komandu
+Config.RemoveItem = true -- Ukoliko zelis da ti remonve item kad iskoristis komandu
 
 Config.Global = {
     ["Job"] = "You don't have a job",
     ["Item"] = "You have no item",
-    ["ItemNeed"] = "shield",
+    ["ItemNeed"] = "shield", -- Ime Itema
 }
 
 Config.Police = {
