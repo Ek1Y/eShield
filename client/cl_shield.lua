@@ -12,7 +12,7 @@ ENR("shield:TogglePoliceShield")
 HEA("shield:TogglePoliceShield", function()
   Citizen.CreateThread(function()
     if not shield then
-      local ped = GetPlayerPed(-1)
+      local ped = PlayerPedId()
       local propName = "prop_jpolice_shield"
       local coords = GetEntityCoords(ped)
       local prop = GetHashKey(propName)
@@ -54,7 +54,7 @@ ENR("shield:ToggleSheriffShield")
 HEA("shield:ToggleSheriffShield", function()
   Citizen.CreateThread(function()
     if not shield then
-      local ped = GetPlayerPed(-1)
+      local ped = PlayerPedId()
       local propName = "prop_jsheriff_shield"
       local coords = GetEntityCoords(ped)
       local prop = GetHashKey(propName)
@@ -96,7 +96,7 @@ ENR("shield:ToggleSwatShield")
 HEA("shield:ToggleSwatShield", function()
   Citizen.CreateThread(function()
     if not shield then
-      local ped = GetPlayerPed(-1)
+      local ped = PlayerPedId()
       local propName = "prop_jswat_shield"
       local coords = GetEntityCoords(ped)
       local prop = GetHashKey(propName)
@@ -138,7 +138,7 @@ ENR("shield:ToggleFibShield")
 HEA("shield:ToggleFibShield", function()
   Citizen.CreateThread(function()
     if not shield then
-      local ped = GetPlayerPed(-1)
+      local ped = PlayerPedId()
       local propName = "prop_jfib_shield"
       local coords = GetEntityCoords(ped)
       local prop = GetHashKey(propName)
@@ -180,7 +180,7 @@ ENR("shield:ToggleNooseShield")
 HEA("shield:ToggleNooseShield", function()
   Citizen.CreateThread(function()
     if not shield then
-      local ped = GetPlayerPed(-1)
+      local ped = PlayerPedId()
       local propName = "prop_jnoose_shield"
       local coords = GetEntityCoords(ped)
       local prop = GetHashKey(propName)
@@ -217,5 +217,4 @@ HEA("shield:ToggleNooseShield", function()
     end
   end)
 end)
-
 
